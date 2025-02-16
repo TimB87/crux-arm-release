@@ -5,7 +5,8 @@ on:
 
 jobs:
   bootstrap:
-    runs-on: docker.io/sepen/crux:3.7-updated-arm64-builder
+    runs-on: ubuntu-latest
+    container: docker.io/sepen/crux:3.7-updated-arm64-builder
     steps:
       - name: Verify sudo works
         id: test-sudo
