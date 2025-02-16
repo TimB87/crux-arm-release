@@ -5,10 +5,7 @@ on:
 
 jobs:
   bootstrap:
-    runs-on: self-hosted
-    container:
-      image: carm-3.7-github-runner:latest
-      options: --cpus 8
+    runs-on: docker.io/sepen/crux:3.7-updated-arm64-builder
     steps:
       - name: Verify sudo works
         id: test-sudo
