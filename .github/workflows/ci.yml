@@ -5,7 +5,7 @@ on:
 
 jobs:
   bootstrap:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04-arm
     container: sepen/crux:3.7-updated-arm64-builder
     steps:
       - name: Verify sudo works
